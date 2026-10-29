@@ -1,0 +1,24 @@
+[project]
+name = "point-cloud-ae"
+version = "0.1.0"
+description = "Rotation-equivariant point cloud graph autoencoder for AI-enhanced CAD"
+authors = [
+    {name = "Alexander Schlicher", email = "schlicher@plcm.tu-darmstadt.de"},
+]
+dependencies = [
+    "setuptools>=75.2.0",
+    "numpy>=2.1.2",
+    "matplotlib>=3.9.2",
+    "scipy>=1.15.1",
+    "torch-geometric>=2.6.1",
+    "pip>=25.2",
+    "torch>=2.8.0",
+    "pytorch3d @ git+https://github.com/facebookresearch/pytorch3d.git@stable",
+]
+requires-python = "==3.10.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
